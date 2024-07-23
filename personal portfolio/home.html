@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="home.css">
+    <!----Font awesome cdn font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input"></span></h5>
+                    <h1>Dinesh Borra</h1>
+                    <p>I am a Tech enthusiast and second-year CSE student with a knack for problem-solving. 
+                       Eager to dive into real-world projects, learn, and make meaningful contributions to your team.
+                    </p>
+                    <div class="btn-group">
+                        <a href="resume.pdf" class="btn">Resume</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/dinesh-borra-342682255/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Dinesh10703" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/dinesh_/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects Section -->
+    <div id="projects" class="projects-section">
+        <div class="wrapper">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="project1.png" alt="Project 1">
+                    <div class="project-name">Bank management system using C</div>
+                    <div class="project-description">A comprehensive bank management system built using C programming language, featuring user authentication, account management, and transaction processing.</div>
+                </div>
+                <div class="project">
+                    <img src="project2.png" alt="Project 2">
+                    <div class="project-name">Bus Reservation in DSA</div>
+                    <div class="project-description">A bus reservation system implemented using data structures and algorithms, allowing users to book tickets, manage reservations, and view seat availability.</div>
+                </div>
+                <div class="project">
+                    <img src="project3.png" alt="Project 3">
+                    <div class="project-name">Calendar using C++</div>
+                    <div class="project-description">A fully functional calendar application developed in C++, featuring date and time management, event scheduling, and user-friendly interface.</div>
+                </div>
+                <div class="project">
+                    <img src="project4.png" alt="Project 4">
+                    <div class="project-name">Real-estate webpage</div>
+                    <div class="project-description">A responsive and visually appealing real estate website, showcasing property listings, search functionality, and user-friendly navigation.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Education Section -->
+    <div id="education" class="education-section">
+        <div class="wrapper">
+            <h2>Education</h2>
+            <div class="education-container">
+                <div class="education">
+                    <img src="education1.png" alt="Education 1">
+                    <div class="education-name">Primary and secondary schooling</div>
+                    <div class="education-description">Completed primary and secondary education with a strong academic foundation and extracurricular involvement.</div>
+                </div>
+                <div class="education">
+                    <img src="education2.png" alt="Education 2">
+                    <div class="education-name">Engineering</div>
+                    <div class="education-description">Currently pursuing a Bachelor's degree in Computer Science Engineering, with a focus on problem-solving and emerging technologies.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills Section -->
+    <div id="skills" class="skills-section">
+        <div class="wrapper">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fa-brands fa-c"></i>
+                    <p>C</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-cuttlefish"></i>
+                    <p>C++</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <p>Frontend Development</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-database"></i>
+                    <p>DBMS</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-code"></i>
+                    <p>DSA</p>
+                </div>
+                <div class="skill">
+                    <i class=" fa-brands fa-python"></i>
+                    <p>python</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section">
+        <div class="wrapper">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
+
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: [""],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+
+        // Get the button
+        let mybutton = document.getElementById("backToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
